@@ -1,0 +1,8 @@
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/beans/Movie.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/configuration/HibernateConfiguration.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/validator/MoviesValidator.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/Application.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/service/MoviesServiceImp.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/controller/MovieController.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/service/MoviesService.java
+/home/hashstudioz/Documents/MoviePortal/src/main/java/com/fortinet/dao/MoviesDao.java

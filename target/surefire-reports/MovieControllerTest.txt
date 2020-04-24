@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: MovieControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE! - in MovieControllerTest
+testMovieAdd(MovieControllerTest)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at com.fortinet.controller.MovieController.addMovie(MovieController.java:49)
+	at MovieControllerTest.testMovieAdd(MovieControllerTest.java:20)
+

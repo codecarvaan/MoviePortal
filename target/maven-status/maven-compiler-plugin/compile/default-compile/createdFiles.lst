@@ -1,0 +1,6 @@
+com/fortinet/dao/MoviesDao.class
+com/fortinet/beans/Movie.class
+com/fortinet/controller/MovieController.class
+com/fortinet/service/MoviesService.class
+com/fortinet/validator/MoviesValidator.class
+com/fortinet/service/MoviesServiceImp.class
