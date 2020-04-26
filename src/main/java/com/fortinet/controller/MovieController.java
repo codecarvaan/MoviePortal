@@ -22,36 +22,36 @@ public class MovieController {
 
     @GetMapping(value = "/", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Movie> getAllMovies() {
-        return moviesValidator.validGetAllMovies();
+        return moviesValidator.getAllMovies();
     } //To get all the movies
 
     //To get all the movies with particular Id
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Movie getMovieById(@PathVariable("id") int MovieId) {
-        return moviesValidator.validgetMoviesById(MovieId);
+        return moviesValidator.getMoviesById(MovieId);
     }
 
     //To get all the movies with Movie name like input
     @GetMapping(value = "/Name/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Movie> getMovieByName(@PathVariable("name") String MovieName) {
-        return moviesValidator.validgetMoviesByName(MovieName);
+        return moviesValidator.getMoviesByName(MovieName);
     }
 
     //To get all the movies with Movie name like input
     @DeleteMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Boolean deleteMovieById(@PathVariable("id") int MovieId) {
-        return moviesValidator.validgetDeleteById(MovieId);
+        return moviesValidator.deleteById(MovieId);
     }
 
     //To add new Movie
     @PostMapping(value = "/addMovie", produces = MediaType.APPLICATION_JSON_VALUE)
     public Movie addMovie(@RequestBody Movie movie) {
-        return moviesValidator.validaddMovie(movie);
+        return moviesValidator.addMovie(movie);
     }
     //To update existing movie with partiular id
     @PostMapping(value = "/updateMovie", produces = MediaType.APPLICATION_JSON_VALUE)
     public Movie updateMovie(@RequestBody Movie movie) {
-        return moviesValidator.validUpdateMovie(movie);
+        return moviesValidator.updateMovie(movie);
     }
 
 

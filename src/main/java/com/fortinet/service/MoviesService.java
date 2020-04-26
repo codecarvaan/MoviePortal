@@ -6,15 +6,16 @@ import com.fortinet.beans.Movie;
 import java.util.List;
 
 public interface MoviesService {
-    List<Movie> ServiceGetAllMovies();
+    List<Movie> getAllMovies();
 
-    List<Movie> ServiceGetMovieByName(String movieName);
+    List<Movie> getMovieByName(String movieName);
 
-    Movie ServiceGetMovieById(int movieId);
+    Movie getMovieById(int movieId);
 
-    Movie ServiceAddMovie(Movie movie);
+    Movie addMovie(Movie movie);
 
-    Boolean ServiceDeleteMovieById(int movieId);
+    Boolean deleteMovieById(int movieId);
 
-    Movie ServiceUpdateMovie(Movie movie);
+    Movie updateMovie(Movie movie);
+
 }

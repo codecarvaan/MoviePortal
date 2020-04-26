@@ -10,42 +10,43 @@ import java.util.List;
 
 @Service
 @Transactional
-public class MoviesServiceImp implements MoviesService{
+public class MoviesServiceImp implements MoviesService {
     @Autowired
     private MoviesDao moviesDao;
+
+    public void setMovieDao(MoviesDao movieDao) {
+        this.moviesDao = movieDao;
+    }
+
     @Override
-    public List<Movie> ServiceGetAllMovies() {
+    public List<Movie> getAllMovies() {
 
         return moviesDao.DAOGetAllMovies();
     }
 
     @Override
-    public List<Movie> ServiceGetMovieByName(String movieName) {
-       return moviesDao.DAOGetMoviesByName(movieName);
+    public List<Movie> getMovieByName(String movieName) {
+        return moviesDao.DAOGetMoviesByName(movieName);
     }
 
     @Override
-    public Movie ServiceGetMovieById(int movieId) {
+    public Movie getMovieById(int movieId) {
         return moviesDao.DAOGetMovieById(movieId);
     }
 
     @Override
-    public Movie ServiceAddMovie(Movie movie) {
-
-
-        if(movie.getId()!=0)
-            throw new RuntimeException(" Movie Id Sould be Empty");
+    public Movie addMovie(Movie movie) {
         return moviesDao.DAOAddMovie(movie);
     }
 
     @Override
-    public Boolean ServiceDeleteMovieById(int movieId) {
+    public Boolean deleteMovieById(int movieId) {
         return moviesDao.DaoDeleteMovie(movieId);
     }
 
     @Override
-    public Movie ServiceUpdateMovie(Movie movie) {
-         return moviesDao.DAOUpdateMovie(movie);
+    public Movie updateMovie(Movie movie) {
+        return moviesDao.DAOUpdateMovie(movie);
     }
 
 }
