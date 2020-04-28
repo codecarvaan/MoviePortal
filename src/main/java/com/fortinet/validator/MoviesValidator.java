@@ -63,7 +63,7 @@ public class MoviesValidator {
 
 
     public List<Movie> getMoviesByName(String movieName) {
-        if (movieName.equals("") || movieName == null)
+        if ( null == movieName ||movieName.equals(""))
             throw new RuntimeException("Movie Name Can Not be empty");
         List<Movie> movie = moviesService.getMovieByName(movieName);
         return movie;

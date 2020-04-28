@@ -24,9 +24,8 @@ public class MoviesDao {
 
     public List<Movie> DAOGetMoviesByName(String MoviesName) {
         Session session = sessionFactory.getCurrentSession();
-        List<Movie> movies=null;
+        List<Movie> movies;
         Criteria cr = session.createCriteria(Movie.class);
-        System.out.println("MoviesName"+MoviesName);
         cr.add(Restrictions.like("name", "%"+MoviesName+"%"));
         movies =  cr.list();
         return movies;
